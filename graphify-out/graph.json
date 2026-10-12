@@ -1,0 +1,20 @@
+{
+  "directed": false,
+  "multigraph": false,
+  "graph": {},
+  "nodes": [
+    {
+      "id": "package",
+      "label": "package.json",
+      "_origin": "ast",
+      "community": 0,
+      "file_type": "code",
+      "norm_label": "package.json",
+      "source_file": "package.json",
+      "source_location": "L1"
+    }
+  ],
+  "links": [],
+  "hyperedges": [],
+  "built_at_commit": "db2ef469c67486010ad819abd70e0c8ca4899cab"
+}

@@ -41,7 +41,7 @@ jobs:
           token: ${{ secrets.GITHUB_TOKEN }}
           add-paths: |
             .
-            :(exclude,glob).github/workflows/**
+            :(exclude).github/workflows
           commit-message: "chore(deps): update skills"
           title: "chore(deps): update skills"
           body: |

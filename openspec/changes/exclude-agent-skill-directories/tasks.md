@@ -10,4 +10,4 @@
 
 ## 3. Validate the change
 
-- [ ] 3.1 Run `openspec validate exclude-agent-skill-directories --json` and confirm the change validates successfully.
+- [x] 3.1 Run `openspec validate exclude-agent-skill-directories --json` and confirm the change validates successfully.

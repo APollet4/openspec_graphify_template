@@ -1,8 +1,14 @@
 {
   "package.json": {
-    "mtime": 1791791470.6240335,
-    "seen": 1791792589.7515788,
+    "mtime": 1791812880.0016022,
+    "seen": 1791812889.0304124,
     "ast_hash": "8a80554c91d9fca8acb82f023de02f11",
     "semantic_hash": "8a80554c91d9fca8acb82f023de02f11"
+  },
+  "skills-lock.json": {
+    "mtime": 1791812880.0016022,
+    "seen": 1791812889.030417,
+    "ast_hash": "3bba01b01f2b580450463c4fe49c694b",
+    "semantic_hash": "3bba01b01f2b580450463c4fe49c694b"
   }
 }

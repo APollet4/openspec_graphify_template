@@ -6,7 +6,7 @@
 
 ## 2. Remove checked-in agent-specific copies
 
-- [ ] 2.1 Delete `.claude/` and `.agents/` and verify neither directory remains in the repository.
+- [x] 2.1 Delete `.claude/` and `.agents/` and verify neither directory remains in the repository.
 
 ## 3. Validate the change
 

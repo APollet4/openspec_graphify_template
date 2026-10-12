@@ -29,10 +29,19 @@ jobs:
           npm install --global @fission-ai/openspec@latest
           openspec update
 
+      - name: Warn about workflow changes
+        run: |
+          if [[ -n "$(git status --short -- .github/workflows)" ]]; then
+            echo "::warning::Changes in .github/workflows are excluded from the pull request."
+          fi
+
       - name: Create pull request
         uses: peter-evans/create-pull-request@v8.1.1
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
+          add-paths: |
+            .
+            :(exclude,glob).github/workflows/**
           commit-message: "chore(deps): update skills"
           title: "chore(deps): update skills"
           body: |

@@ -1,0 +1,42 @@
+name: Update Skills and OpenSpec
+
+on:
+  #schedule:
+  # Every Monday at 8AM UTC
+  #- cron: '0 8 * * 1'
+  workflow_dispatch:
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      pull-requests: write
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Update skills from lockfile
+        run: npx --yes skills@latest update --project --yes
+
+      - name: Update OpenSpec
+        run: |
+          npm install --global @fission-ai/openspec@latest
+          openspec update
+
+      - name: Create pull request
+        uses: peter-evans/create-pull-request@v8.1.1
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          commit-message: "chore(deps): update skills"
+          title: "chore(deps): update skills"
+          body: |
+            Updates project skills from `skills-lock.json` and refreshes generated OpenSpec integrations.
+
+            Please review the updated skills and OpenSpec files before merging.
+          branch: chore/update-skills

@@ -1,0 +1,24 @@
+# Operating System
+.DS_Store
+Thumbs.db
+
+# Editors & IDEs
+.idea/
+.vscode/
+*.swp
+
+# Environment & Secrets
+.env
+.env*.local
+.venv/
+
+# Dependencies
+node_modules/
+
+# Logs & Cache
+*.log
+.cache/
+
+# Graphify
+graphify-out/cache/
+graphify-out/.graphify_*

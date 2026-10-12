@@ -43,7 +43,7 @@ jobs:
             .
             :(exclude).github/workflows
             :(exclude).claude
-            :(exclude).agents
+            :(exclude)agents
           commit-message: "chore(deps): update skills"
           title: "chore(deps): update skills"
           body: |

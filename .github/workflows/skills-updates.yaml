@@ -42,6 +42,8 @@ jobs:
           add-paths: |
             .
             :(exclude).github/workflows
+            :(exclude).claude
+            :(exclude).agents
           commit-message: "chore(deps): update skills"
           title: "chore(deps): update skills"
           body: |

@@ -2,7 +2,7 @@
 
 ## 1. Exclude agent-specific directories from the update PR
 
-- [ ] 1.1 Add `.claude` and `.agents` exclusions to `.github/workflows/skills-updates.yaml` and verify both pathspecs are present in `add-paths`.
+- [x] 1.1 Add `.claude` and `.agents` exclusions to `.github/workflows/skills-updates.yaml` and verify both pathspecs are present in `add-paths`.
 
 ## 2. Remove checked-in agent-specific copies
 
